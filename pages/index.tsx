@@ -10,9 +10,10 @@ const Home: NextPage = () => {
         <link rel="shortcut icon" href="icon.png" />
         <title> Frontendship</title>
       </Head>
-      <Image alt="Frontendship logo" src={logo} width={300} height={300} />
+      <Image alt="Frontendship logo" src={logo} width={200} height={200} />
 
-      <h1> Coming soon!</h1>
+
+      <p className="CS">COMING SOON! </p>
     </div>
   );
 };
