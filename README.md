@@ -14,6 +14,12 @@ Go to the project directory
   cd website
 ```
 
+Change the branch
+
+```bash
+  git checkout development
+```
+
 Install dependencies
 
 ```bash
