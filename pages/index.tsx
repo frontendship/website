@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import logo from "../public/logo.png";
-
+import Header from "../components/Header";
 const Home: NextPage = () => {
   return (
     <div>
@@ -10,10 +8,7 @@ const Home: NextPage = () => {
         <link rel="shortcut icon" href="icon.png" />
         <title> Frontendship</title>
       </Head>
-      <Image alt="Frontendship logo" src={logo} width={200} height={200} />
-
-
-      <p className="CS">COMING SOON! </p>
+      <Header />
     </div>
   );
 };
