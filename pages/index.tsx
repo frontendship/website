@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/Header";
+import AllTitles from "../components/Title/AllTitles";
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -8,7 +9,7 @@ const Home: NextPage = () => {
         <link rel="shortcut icon" href="icon.png" />
         <title> Frontendship</title>
       </Head>
-      <Header />
+      <AllTitles />
     </div>
   );
 };
