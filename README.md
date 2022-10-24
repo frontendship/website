@@ -26,10 +26,10 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start the development server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 ## Usage/Examples
