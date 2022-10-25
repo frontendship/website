@@ -37,7 +37,7 @@ Start the development server
 ## Usage/Examples
 
 ```javascript
-import Header from "../components/Header";
+import Header from "@/components/Header";
 
 function App() {
   console.log("Hello world");
