@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primryBrand: "#187AEB",
+        primaryBrand: "#187AEB",
         secondaryBrand: "#0CBACC",
         "primary-blue-400": "#050B1E",
         "primary-blue-300": "#0E1B31",
