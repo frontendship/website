@@ -1,0 +1,21 @@
+.container {
+  @apply h-[490px] bg-primary-blue-400 flex justify-center items-center gap-[92px];
+}
+.cardContainer {
+  @apply w-[700px];
+}
+.descContainer {
+  @apply flex flex-col gap-4 w-[381px];
+}
+.title {
+  @apply font-bold text-4xl text-white;
+}
+.desc {
+  @apply text-white opacity-60 text-base leading-7 font-normal w-[365px] pr-1;
+}
+.button {
+  @apply h-[58px] w-[192px] bg-white rounded-[14px];
+}
+.buttonText {
+  @apply font-medium text-base tracking-tight text-primary-blue-400 flex gap-2 justify-center items-center;
+}

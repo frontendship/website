@@ -1,0 +1,45 @@
+.container {
+  @apply w-full h-[340px] bg-white flex rounded-[14px];
+}
+.innerContainer {
+  @apply p-[44px] flex flex-col gap-7;
+}
+.titleContainer {
+  @apply flex gap-2;
+}
+.title {
+  @apply font-medium text-xl text-primary-blue-400 leading-5;
+}
+.subtitle {
+  @apply font-bold text-base leading-[26px] text-primary-blue-400;
+}
+.desc {
+  @apply font-normal text-base leading-[26px] text-primary-blue-400 text-ellipsis tracking-wide;
+}
+.button {
+  @apply text-primary-blue-400 font-medium text-base leading-4 flex gap-2;
+}
+.images {
+  @apply flex items-center;
+}
+.text {
+  @apply flex ml-16 text-base leading-[18px] text-center;
+}
+.semibold {
+  @apply font-semibold;
+}
+.image {
+  @apply h-6 w-6 box-border rounded-full absolute border border-white shadow-lg shadow-[#DEDEDE] object-cover;
+}
+.image:nth-child(1) {
+  @apply ml-0;
+}
+.image:nth-child(2) {
+  @apply ml-4;
+}
+.image:nth-child(3) {
+  @apply ml-8;
+}
+.imageContainer {
+  @apply flex h-7;
+}
