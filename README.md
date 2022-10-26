@@ -2,13 +2,25 @@ Figma: https://www.figma.com/file/LCgTUgVNpKKMQQ3xlAca4p/frontendship?node-id=0%
 
 ## Getting Started
 
-### Run Locally
+## Contribute To The Project and Run Locally
+
+To contribute:
+
+Fork the project.
+
+```bash
+  git clone https://github.com/<username>/website
+```
+
+To run locally:
 
 Clone the project
 
 ```bash
   git clone https://github.com/frontendship/website
 ```
+
+
 
 Go to the project directory
 
@@ -33,6 +45,10 @@ Start the development server
 ```bash
   npm run dev
 ```
+
+## How to open a pull request
+
+After your changes, 
 
 ## Usage/Examples
 
