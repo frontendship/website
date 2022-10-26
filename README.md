@@ -12,16 +12,6 @@ Fork the project.
   git clone https://github.com/<username>/website
 ```
 
-To run locally:
-
-Clone the project
-
-```bash
-  git clone https://github.com/frontendship/website
-```
-
-
-
 Go to the project directory
 
 ```bash
@@ -37,18 +27,52 @@ Change the branch
 Install dependencies
 
 ```bash
-  npm install
+  yarn
 ```
 
 Start the development server
 
 ```bash
-  npm run dev
+  yarn dev
 ```
 
 ## How to open a pull request
 
-After your changes, 
+Make sure your fork repository is synced with remote (upstream, original) repository to avoid conflicts. You can either [check here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) or simply use terminal codes below.
+### Syncing a fork branch
+
+First add upstream with:
+
+```bash
+git remote add upstream https://github.com/fshipcommunity/website
+```
+
+Then to get upstream's updates run:
+
+```bash
+git fetch upstream
+```
+
+Check out your fork's local default branch:
+
+```bash
+git checkout <BRANCH_NAME>
+```
+
+Then merge upstream with your fork (local) repo:
+
+```bash
+git merge upstream/<BRANCH_NAME>
+```
+
+### Example
+
+```bash
+git remote add upstream https://github.com/fshipcommunity/website
+git fetch upstream
+git checkout development
+git merge upstream/development
+```
 
 ## Usage/Examples
 
