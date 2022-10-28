@@ -1,34 +1,39 @@
-import Icon from "../Icon/Icon";
 import style from "./Header.module.css";
-declare module "*.jpg";
-declare module "*.png";
-
+import logo from "./logo.png";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <div className={style.header}>
-
-      
-      <nav className={style["container flex justify-around py-8  mx-auto border-line"]}>
-
-        <div className="flex items-center">
-        <img src="logo.png" className={style["logo"]} alt='logo' />
-        <h3 className={style['logoTitle']}><b>Frontend</b><span>ship</span></h3>
+      <div className={style.headerLeft}>
+        <div className={style.logo}>
+          <Image src={logo} />
         </div>
-
-        <div className="items-center hidden space-x-8 lg:flex">
-          <a href="#" className={style['anasayfa']}>Anasayfa</a>
-          <a href="#" className={style['discord']}>Discord</a>
-          <a href="#" className={style['blog']}>Blog</a>
-          <a href="#" className={style['etkinlikler']}>Etkinlikler</a>
-        </div>
-
-        <div className={style["flex items-center space-x-2 "]}>
-          <button className={style["discorda-katil"]}>
-            Discorda Katil
-          </button>
-        </div>
-      </nav>
+        <nav className={style.navbar}>
+          <ul>
+            {[
+              { name: "Anasayfa", link: "/", isActive: true },
+              { name: "Discord", link: "/discord" },
+              { name: "Blog", link: "/blog" },
+              { name: "Etkinlikler", link: "events" },
+            ].map((item: any) => (
+              <li key={item.name}>
+                <a
+                  className={`${style.link} ${
+                    item.isActive && style.linkActive
+                  }`}
+                  href={item.link}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <div className={style.headerRight}>
+        <button>Discorda Katıl</button>
+      </div>
     </div>
   );
 };
