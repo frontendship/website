@@ -1,29 +1,29 @@
 .container {
-  @apply w-full h-[340px] bg-white flex rounded-[14px];
+  @apply w-full lg:h-[340px] h-full bg-white flex rounded-[14px];
 }
 .innerContainer {
-  @apply p-[44px] flex flex-col gap-7;
+  @apply md:p-[44px] p-5 flex flex-col lg:gap-5 gap-4;
 }
 .titleContainer {
-  @apply flex gap-2;
+  @apply flex gap-2 sm:items-start md:items-center;
 }
 .title {
-  @apply font-medium text-xl text-primary-blue-400 leading-5;
+  @apply font-medium md:text-xl text-base text-primary-blue-400 md:leading-5 flex;
 }
 .subtitle {
-  @apply font-bold text-base leading-[26px] text-primary-blue-400;
+  @apply font-bold md:text-base text-sm leading-[26px] text-primary-blue-400;
 }
 .desc {
-  @apply font-normal text-base leading-[26px] text-primary-blue-400 text-ellipsis tracking-wide;
+  @apply font-normal md:text-base text-sm leading-[26px] text-primary-blue-400 text-ellipsis tracking-wide;
 }
 .button {
-  @apply text-primary-blue-400 font-medium text-base leading-4 flex gap-2;
+  @apply text-primary-blue-400 font-medium md:text-base items-center text-sm leading-4 flex gap-2;
 }
 .images {
   @apply flex items-center;
 }
 .text {
-  @apply flex ml-16 text-base leading-[18px] text-center;
+  @apply flex ml-16 md:text-base text-sm leading-[18px] text-center;
 }
 .semibold {
   @apply font-semibold;

@@ -1,21 +1,21 @@
 .container {
-  @apply h-[490px] bg-primary-blue-400 flex justify-center items-center gap-[92px];
+  @apply lg:items-start xl:h-[480px] lg:gap-1  xl:gap-[10px] md:h-[50%] items-center lg:grid-cols-3 md:w-full grid bg-primary-blue-400 justify-center xl:grid-cols-8;
 }
 .cardContainer {
-  @apply w-[700px];
+  @apply w-full p-5 sm:p-10  md:h-full xl:h-full content-center flex justify-center items-center sm:w-full sm:h-screen xl:col-start-2 xl:col-span-4 xl:w-full  xl:justify-self-center lg:col-span-2 lg:h-full md:col-span-1;
 }
 .descContainer {
-  @apply flex flex-col gap-4 w-[381px];
+  @apply flex-col xl:h-full xl:w-[480px] gap-4 p-5 sm:p-10 flex justify-center;
 }
 .title {
-  @apply font-bold text-4xl text-white;
+  @apply font-bold md:text-4xl text-2xl text-white;
 }
 .desc {
-  @apply text-white opacity-60 text-base leading-7 font-normal w-[365px] pr-1;
+  @apply text-white opacity-60 md:text-base text-sm leading-7 font-normal pr-1;
 }
 .button {
-  @apply h-[58px] w-[192px] bg-white rounded-[14px];
+  @apply h-[58px] lg:w-[192px] bg-white rounded-[14px] md:w-[25%];
 }
 .buttonText {
-  @apply font-medium text-base tracking-tight text-primary-blue-400 flex gap-2 justify-center items-center;
+  @apply font-medium md:text-base text-sm tracking-tight text-primary-blue-400 flex gap-2 justify-center items-center;
 }

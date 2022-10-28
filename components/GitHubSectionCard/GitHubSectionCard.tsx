@@ -9,23 +9,23 @@ const GitHubSectionCard = () => {
       <div className={styles.innerContainer}>
         <div className={styles.titleContainer}>
           <Icon icon="star" size={20} />
-          <span className={styles.title}></span>Frontendship
+          <span className={styles.title}>Frontendship</span>
         </div>
         <div className={styles.images}>
           <div className={styles.imageContainer}>
             <img
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
+              alt="image1"
               className={styles.image}
             />
             <img
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
+              alt="image2"
               className={styles.image}
             />
             <img
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
+              alt="image3"
               className={styles.image}
             />
           </div>
