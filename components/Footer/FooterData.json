@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "header": "Anasayfa",
+    "content": [
+      "Neden Frontendship?",
+      "Katkı Sağla",
+      "Yaklaşan Etkinlikler",
+      "Ekibimiz"
+    ]
+  },
+  {
+    "id": 1,
+    "header": "Kaynaklar",
+    "content": ["Makale", "Roadmap", "Video", "Bağlantılar"]
+  },
+  {
+    "id": 2,
+    "header": "Topluluk",
+    "content": ["Github", "Discord", "Youtube", "İletişim"]
+  }
+]

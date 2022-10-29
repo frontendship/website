@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 import GitHubSection from "../components/GitHubSection/GitHubSection";
 import Header from "../components/Header/Header";
 const Home: NextPage = () => {
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <GitHubSection />
+      <Footer/>
     </div>
   );
 };
