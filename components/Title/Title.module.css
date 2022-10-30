@@ -3,7 +3,7 @@
   }
   
   .title2 {
-    @apply text-5xl;
+    @apply text-5xl font-bold text-primary-blue-400;
   }
   .title3 {
     @apply text-4xl;

@@ -9,7 +9,7 @@ export type TitleProps = {
 };
 
 const Title = (props: TitleProps) => {
-    const { level = 1, styles: propsStyles = styles[`title.${level}`] } = props;
+    const { level = 1, styles: propsStyles = styles[`title${level}`] } = props;
     return React.createElement(
       `h${level}`,
       {

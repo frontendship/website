@@ -3,11 +3,20 @@ import Title from '../Title/Title';
 import style from './Event.module.css';
 const Event = () => {
   return (
-    <div>
-      <div className='flex flex-col justify-start items-center'>
-       <Title level= {6}> Yaklaşan Etkinlikler</Title>
+      <section className='w-full p-28 bg-red-400'>
+
+      <div className='flex flex-col justify-center items-start'>
+       <Title level= {2}> Yaklaşan Etkinlikler</Title>
        </div>
-    </div>
+       {/*title-end*/}
+       <div className="">
+        <div></div>
+        {/*main-banner-end*/}
+        <div></div>
+        {/*main-banner-text-end*/}
+       </div>
+       {/*main-end*/}
+       </section>
   )
 }
 
