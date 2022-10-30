@@ -1,46 +1,65 @@
- .header {
-  @apply flex justify-between items-center   min-h-[5.625rem]  fixed w-full  py-2.5  text-primary-blue-300  bg-primary-blue-400;
+.header {
+  @apply flex
+  justify-between
+  items-center 
+  min-h-[5.625rem]   
+  max-[640px]:p-6 sm:p-4 md:p-10  
+text-primary-blue-300  
+bg-primary-blue-400;
 }
 
 .headerLeft {
-  @apply flex justify-center w-2/5 ;
+  @apply flex justify-center;
 }
-.logo{
-  @apply  flex px-6 w-40 items-center
- }
+.logo {
+  @apply flex items-center min-w-[40px] px-6 ml-[-18px];
+}
 .navbar {
-  @apply flex flex-col md:flex-row px-4 
-    
+  @apply flex flex-col md:flex-row px-4;
 }
-.mainMenu{
-  @apply bg-primary-blue-400 fixed  left-0 animate-[wiggle_2s_ease-in-out_1]   h-full  mt-14 md:mt-0 md:relative  flex  flex-col md:flex-row md:items-center  
+.mainMenu {
+  @apply flex   
+  md:items-center
+  flex-col md:flex-row 
+  fixed md:relative
+  h-full
+  left-0 
+  mt-14 md:mt-0
+bg-primary-blue-400   
+  animate-[wiggle_1s_ease-in-out_1];
 }
 
-.mainMenu a{
-  @apply text-lg md:text-base   text-white py-10 px-16 md:py-4 md:px-4 opacity-70  flex  hover:opacity-100 duration-500; 
+.mainMenuOpen {
+  @apply w-full;
 }
-
+.mainMenuClose {
+  @apply hidden w-0;
+}
 
 .link {
-  @apply text-gray-400 
- 
+  @apply flex  
+  text-lg md:text-base   
+  text-white
+  py-10 px-16 md:py-4 md:px-4 
+  opacity-70 hover:opacity-100 
+  duration-500;
 }
 
 .linkActive {
   @apply text-white;
 }
 
-.headerRight{
-  @apply bg-primary-blue-400 flex flex-row  justify-center w-1/5 items-center justify-between gap-4; 
+.headerRight {
+  @apply bg-primary-blue-400;
 }
-.headerRight button {
-  @apply text-primary-blue-400 bg-white sm:px-[10px] md:px-[10px]  lg:px-[23px] py-[15px] rounded-[8px] 
-  
-  ;
+.discordButton {
+  @apply py-[15px]
+   sm:px-[10px] lg:px-[23px]  
+   rounded-[8px] 
+   text-primary-blue-400
+   bg-white;
 }
 
-.toggle{
-  @apply bg-red-600 w-full;
-} 
-
-
+.toggle {
+  @apply w-6 text-gray-200;
+}

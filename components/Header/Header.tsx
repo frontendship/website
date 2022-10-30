@@ -4,126 +4,102 @@ import logo from "./logo.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const navbarList = [
+  { name: "Anasayfa", link: "/", isActive: true },
+  { name: "Discord", link: "/discord" },
+  { name: "Blog", link: "/blog" },
+  { name: "Etkinlikler", link: "events" },
+];
 
+const DiscordButton = () => (
+  <button className={style["discordButton"]}>Discorda Katıl</button>
+);
 
-
+type NavbarItemProps = {
+  name: string;
+  isActive?: boolean;
+  link: string;
+};
+const NavbarItem = ({ item }: { item: NavbarItemProps }) => {
+  return (
+    <li>
+      <a
+        className={`${style.link} ${item.isActive && style.linkActive}`}
+        href={item.link}
+      >
+        {item.name}
+      </a>
+    </li>
+  );
+};
 const Header = () => {
-
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: 0,
     height: 0,
   });
+
   useEffect(() => {
-    console.log('sefsgf')
     const handleResize = () => {
       setSize({
         width: window.innerWidth,
         height: window.innerHeight,
-
       });
     };
     window.addEventListener("resize", handleResize);
-    handleResize()
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  useEffect(() => {
-    console.log('sefsgfxxxxxx')
-    if (size.width > 768 && menuOpen) {
-      setMenuOpen(false);
-    }
-  }, [size.width, menuOpen]);
 
-  const menuToggleHandler = () => {
-    setMenuOpen((p) => !p);
+  useEffect(() => {
+    if (size.width > 768 && isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  }, [size.width, isMenuOpen]);
+
+  const switchMenu = () => {
+    setIsMenuOpen((p) => !p);
   };
   return (
     <div className={style.header}>
       <div className={style.headerLeft}>
         <div className={style.logo}>
-          <Image src={logo} />
+          <Image alt="logo" src={logo} />
         </div>
-        <nav className={`${style.navbar} ${menuOpen && size.width < 768 ? style['hamburger'] : style['close']}`}>
+        <nav className={style.navbar}>
+          <ul
+            className={`${style.mainMenu} ${
+              !isMenuOpen ||
+              (size.width > 768
+                ? style["mainMenuClose"]
+                : style["mainMenuOpen"])
+            }`}
+          >
+            {(isMenuOpen || size.width > 768) &&
+              navbarList.map((item: any) => (
+                <NavbarItem key={item.name} item={item} />
+              ))}
 
-          <ul className={style.mainMenu}>
-
-            {(size.width > 768 || menuOpen) && ([
-              { name: "Anasayfa", link: "/", isActive: true },
-              { name: "Discord", link: "/discord" },
-              { name: "Blog", link: "/blog" },
-              { name: "Etkinlikler", link: "events" },
-            ].map((item: any) => (
-              <li key={item.name}>
-                <a
-                  className={`${style.link} ${item.isActive && style.linkActive
-                    }`}
-                  href={item.link}
-                >
-                  {item.name}
-                </a>
-              </li>
-            )))}
+            {isMenuOpen && size.width < 768 && <DiscordButton />}
           </ul>
-
-
         </nav>
       </div>
 
       <div className={style.headerRight}>
-        <button className={style.firstInput}>Discorda Katıl</button>
-
-
-        {size.width < 768 && (<div className={style.toggle}>
-          {menuOpen ? (
-            <Icon icon="close" onClick={menuToggleHandler} />
-          ) : (
-            <Icon icon="hamburger" onClick={menuToggleHandler} />
-          )}
-        </div>)}
-     {/*    <ul className={`md:flex md:items-center md:gap-8 pb-8 md:pb-0 transition-all duration-500 ease-in ${menuOpen ? '' : 'hidden'}`}>
-          {links.map((link) => (
-            <li key={link.name} className="my-7 md:my-0"><a href={link.link} className="text-xl text-gray-800 hover:text-gray-400 duration-500">{link.name}</a></li>
-          ))}
-          <button>
-            Get Started
-          </button>
-        </ul>  */}
-     {/*    <ul className={`md:flex md:items-center md:gap-8 pb-8 md:pb-0 transition-all duration-500 ease-in ${menuOpen ? '' : 'hidden'}`}>
-
-          {(size.width > 768 || menuOpen) && ([
-            { name: "Anasayfa", link: "/", isActive: true },
-            { name: "Discord", link: "/discord" },
-            { name: "Blog", link: "/blog" },
-            { name: "Etkinlikler", link: "events" },
-          ].map((item: any) => (
-            <li key={item.name} className="my-7 md:my-0">
-              <a
-                className={"text-xl text-gray-800 hover:text-gray-400 duration-500"}
-                href={item.link}
-              >
-                {item.name}
-              </a>
-            </li>
-          )))}
-        </ul> */}
-
+        {size.width > 768 ? (
+          <DiscordButton />
+        ) : (
+          <div className={style.toggle}>
+            <Icon
+              icon={isMenuOpen ? "close" : "hamburger"}
+              onClick={switchMenu}
+            />
+          </div>
+        )}
       </div>
-
     </div>
-
-
-
   );
 };
-
-
-
-
-
-
-
-
-
 
 export default Header;
