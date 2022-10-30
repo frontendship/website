@@ -1,0 +1,14 @@
+.card {
+  @apply grid gap-8 grid-cols-1 mx-6 md:mx-0 md:grid-cols-3;
+}
+.cardContent {
+  @apply flex flex-col justify-start items-start max-w-[386px] bg-white rounded-xl py-8 px-8;
+}
+
+.description {
+  @apply text-primary-blue-400 opacity-50 font-normal;
+}
+
+.subDescription {
+  @apply text-lg font-normal leading-7 mb-10 mx-6 max-w-2xl text-center text-[#656464];
+}

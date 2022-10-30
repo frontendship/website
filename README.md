@@ -44,7 +44,7 @@ Make sure your fork repository is synced with remote (upstream, original) reposi
 First add upstream with:
 
 ```bash
-git remote add upstream https://github.com/fshipcommunity/website
+git remote add upstream https://github.com/frontendship/website
 ```
 
 Then to get upstream's updates run:
