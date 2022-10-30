@@ -3,11 +3,11 @@ import Title from '../Title/Title';
 import style from './Event.module.css';
 const Event = () => {
   return (
-    <div>
+    <section className='w-full'>
       <div className='flex flex-col justify-start items-center'>
-       <Title level= {6}> Yaklaşan Etkinlikler</Title>
+       <Title level={6}> Yaklaşan Etkinlikler</Title>
        </div>
-    </div>
+    </section>
   )
 }
 
