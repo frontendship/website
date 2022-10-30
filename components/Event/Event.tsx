@@ -3,6 +3,7 @@ import Title from '../Title/Title';
 import style from './Event.module.css';
 const Event = () => {
   return (
+
       <section className='w-full p-28 bg-red-400'>
 
       <div className='flex flex-col justify-center items-start'>
