@@ -1,5 +1,5 @@
 .title {
-  @apply text-6xl; /* TODO <-- add default title styles here */
+  @apply text-6xl;
 }
 
 .title2 {

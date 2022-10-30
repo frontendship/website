@@ -1,51 +1,10 @@
 import style from "./BriefSection.module.css";
 import Icon from "../Icon/Icon";
 import Title from "../Title/Title";
+import contentData from "./contentData.json";
 
 const BriefSection = () => {
-  const cardArray: any = [
-    {
-      iconName: "open-source",
-      iconColor: "text-blue-500",
-      title: "Açık Kaynak",
-      description: "Her seviyeden npm paketleri geliştirerek frontendship topluluğunda yer alan herkesi açık kaynaklı projelere contribution yapmaya ve referans gösterebilecekleri işler",
-    },
-    {
-      iconName: "github",
-      title: "Deneyim",
-      iconColor: "text-[#F76268]",
-
-      description:
-        "Git kullanmak, ekip çalışması yapabilmek, ekosistemde yaygın olarak kullanılan toolların kullanımını ve amaçlarını aktararak da alanda yeni kişileri ilk iş deneyimlerine hazırlamak.",
-    },
-    {
-      iconName: "messages",
-      title: "Soru Cevap",
-      iconColor: "text-yellow-500",
-
-      description: "Sorular sorabilmek veya soruları cevaplayarak herkesin seviyesini tespit etmesini ve geliştirmesini sağlamak amaçlı yardımlaşmak.",
-    },
-    {
-      iconName: "interaction",
-      iconColor: "text-green-500",
-      title: "Açık Kaynak",
-      description: "Her seviyeden npm paketleri geliştirerek frontendship topluluğunda yer alan herkesi açık kaynaklı projelere contribution yapmaya ve referans gösterebilecekleri işler",
-    },
-    {
-      iconName: "calendar",
-      title: "Deneyim",
-      iconColor: "text-[#1D8FBF]",
-
-      description:
-        "Git kullanmak, ekip çalışması yapabilmek, ekosistemde yaygın olarak kullanılan toolların kullanımını ve amaçlarını aktararak da alanda yeni kişileri ilk iş deneyimlerine hazırlamak.",
-    },
-    {
-      iconName: "feedback",
-      title: "Soru Cevap",
-      iconColor: "text-purple-500",
-      description: "Sorular sorabilmek veya soruları cevaplayarak herkesin seviyesini tespit etmesini ve geliştirmesini sağlamak amaçlı yardımlaşmak.",
-    },
-  ];
+  const cardArray: any = contentData;
 
   return (
     <div className="flex flex-col justify-center items-center py-12">
