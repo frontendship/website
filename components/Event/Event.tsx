@@ -5,7 +5,7 @@ const Event = () => {
   return (
     <div>
       <div className='flex flex-col justify-start items-center'>
-       <Title level= {2}> Yaklaşan Etkinlikler</Title>
+       <Title level= {6}> Yaklaşan Etkinlikler</Title>
        </div>
     </div>
   )
