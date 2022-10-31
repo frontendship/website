@@ -4,6 +4,7 @@ import logo from "./logo.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+
 const navbarList = [
   { name: "Anasayfa", link: "/", isActive: true },
   { name: "Discord", link: "/discord" },
@@ -34,6 +35,7 @@ const NavbarItem = ({ item }: { item: NavbarItemProps }) => {
 };
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const genericHamburgerLine = style['genericHamburgerLine']
   const [size, setSize] = useState({
     width: 0,
     height: 0,
@@ -69,12 +71,11 @@ const Header = () => {
         </div>
         <nav className={style.navbar}>
           <ul
-            className={`${style.mainMenu} ${
-              !isMenuOpen ||
+            className={`${style.mainMenu} ${!isMenuOpen ||
               (size.width > 768
                 ? style["mainMenuClose"]
                 : style["mainMenuOpen"])
-            }`}
+              }`}
           >
             {(isMenuOpen || size.width > 768) &&
               navbarList.map((item: any) => (
@@ -86,17 +87,34 @@ const Header = () => {
         </nav>
       </div>
 
+
       <div className={style.headerRight}>
         {size.width > 768 ? (
           <DiscordButton />
         ) : (
-          <div className={style.toggle}>
-            <Icon
-              icon={isMenuOpen ? "close" : "hamburger"}
-              onClick={switchMenu}
+          <button onClick={switchMenu} className={style.hamburger}>
+            <div
+              className={`${genericHamburgerLine} ${isMenuOpen
+                  ? style['part1']
+                  : style['part2']
+                }`}/>
+            
+            <div
+              className={`${genericHamburgerLine} ${isMenuOpen ? style['part3'] : style['secondLine']
+                }`}
             />
-          </div>
+            <div
+              className={`${genericHamburgerLine} ${isMenuOpen
+                  ? style['part5']
+                  : style['part6']
+                }`}
+            />
+          </button>
+
         )}
+
+
+
       </div>
     </div>
   );
