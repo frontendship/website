@@ -1,5 +1,5 @@
 .container {
-    @apply bg-[#050B1E] flex flex-col gap-[65px] justify-center items-center pt-20 pb-24 pl-4 pr-4;
+    @apply bg-primary-blue-400 flex flex-col gap-[65px] justify-center items-center pt-20 pb-24 pl-4 pr-4;
 }
 
 .titleContainer {
