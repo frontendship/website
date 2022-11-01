@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import GitHubSection from "../components/GitHubSection/GitHubSection";
 import Header from "../components/Header/Header";
+import CommunityModerators from "../components/CommunityModerators/CommunityModerators";
 const Home: NextPage = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <GitHubSection />
+      <CommunityModerators />
     </div>
   );
 };

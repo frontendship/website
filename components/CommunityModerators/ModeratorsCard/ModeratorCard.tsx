@@ -1,10 +1,19 @@
 import React from 'react';
-import "./ModeratorCard.module.css";
+import styles from "./ModeratorCard.module.css";
 
-const ModeratorsCard = () => {
+const ModeratorsCard = ({ image, name, title }: any) => {
     return (
-        <div>ModeratorsCard</div>
+        <div className={styles.cardContainer}>
+            <div className={styles.imageWrapper}>
+                <img className={styles.image} src={image} alt="moderator" />
+            </div>
+            <div className={styles.textWrapper}>
+                <p className={styles.name}>{name}</p>
+                <p className={styles.title}>{title}</p>
+            </div>
+        </div>
+
     )
 }
 
-export default ModeratorsCard
+export default ModeratorsCard;

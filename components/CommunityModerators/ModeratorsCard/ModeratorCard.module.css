@@ -1,0 +1,19 @@
+.cardContainer {
+    @apply bg-white rounded-2xl pl-6 pr-6 pt-7 pb-7 xl:pt-7 xl:pr-12 xl:pl-12 xl:pb-7 flex flex-col justify-center items-center text-center;
+}
+
+.textWrapper {
+    @apply mt-12;
+}
+
+.image {
+    @apply w-[140px] h-[140px] object-cover rounded-full;
+}
+
+.name {
+    @apply font-semibold text-2xl mb-3 text-[#2F2C4A;];
+}
+
+.title {
+    @apply font-normal text-[#656464] text-base;
+}
