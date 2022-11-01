@@ -13,7 +13,9 @@ const navbarList = [
 ];
 
 const DiscordButton = () => (
-  <button className={style["discordButton"]}>Discorda Katıl</button>
+
+   <button className={style["discordButton"]}>Discorda Katıl</button> 
+
 );
 
 type NavbarItemProps = {
