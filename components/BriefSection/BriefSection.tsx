@@ -9,7 +9,7 @@ const BriefSection = () => {
   return (
     <div className="flex flex-col justify-center items-center py-12">
       <div className="flex flex-col items-center">
-        <Title level={2}>Frontendship'e neden katılmalıyım?</Title>
+        <Title level={2}>Frontendship&apos;e neden katılmalıyım?</Title>
         <p className={style.subDescription}>Frontend alanında sıfırdan ileri seviyelere kadar sektöre katkı sağlayacak içerikler üretmek ve topluluğa destek sağlamak istiyoruz.</p>
       </div>
       <div className="flex max-w-7xl">
