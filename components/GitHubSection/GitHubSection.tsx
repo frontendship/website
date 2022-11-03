@@ -1,6 +1,5 @@
 import React from "react";
-import GitHubSectionCard from "../GitHubSectionCard/GitHubSectionCard";
-import Icon from "../Icon/Icon";
+import { GitHubSectionCard, Icon } from "components";
 import styles from "./GitHubSection.module.css";
 
 const GithubSection = () => {

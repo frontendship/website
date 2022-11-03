@@ -1,6 +1,5 @@
+import {Icon, Title} from "components"
 import style from "./BriefSection.module.css";
-import Icon from "../Icon/Icon";
-import Title from "../Title/Title";
 import contentData from "./contentData.json";
 
 const BriefSection = () => {

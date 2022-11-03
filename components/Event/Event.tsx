@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title';
+import { Title } from 'components';
 import style from './Event.module.css';
 const Event = () => {
   return (
