@@ -1,6 +1,6 @@
 import React from "react";
-import { HtmlHeadLevel } from "../../types/html.types";
-import { StyleTypes } from "../../types/style.types";
+import { HtmlHeadLevel } from "types/html.types";
+import { StyleTypes } from "types/style.types";
 import ModuleStyles from "./Title.module.css";
 
 export type TitleProps = {
