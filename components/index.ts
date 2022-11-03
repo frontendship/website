@@ -23,6 +23,9 @@ export const Icon = dynamic(() => import("./Icon/Icon"));
 export const GitHubSection = dynamic(
   () => import("./GitHubSection/GitHubSection")
 );
+export const GitHubSectionCard = dynamic(
+  () => import("./GitHubSectionCard/GitHubSectionCard")
+);
 export const BlogCard = dynamic(() => import("./BlogCard/BlogCard"));
 
 export const BriefSection = dynamic(
