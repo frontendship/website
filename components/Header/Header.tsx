@@ -1,9 +1,7 @@
 import style from "./Header.module.css";
-import Icon from "../Icon/Icon";
 import logo from "./logo.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
 
 const navbarList = [
   { name: "Anasayfa", link: "/", isActive: true },
@@ -13,9 +11,7 @@ const navbarList = [
 ];
 
 const DiscordButton = () => (
-
-   <button className={style["discordButton"]}>Discorda Katıl</button> 
-
+  <button className={style["discordButton"]}>Discorda Katıl</button>
 );
 
 type NavbarItemProps = {
@@ -37,7 +33,7 @@ const NavbarItem = ({ item }: { item: NavbarItemProps }) => {
 };
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const genericHamburgerLine = style['genericHamburgerLine']
+  const genericHamburgerLine = style["genericHamburgerLine"];
   const [size, setSize] = useState({
     width: 0,
     height: 0,
@@ -73,11 +69,12 @@ const Header = () => {
         </div>
         <nav className={style.navbar}>
           <ul
-            className={`${style.mainMenu} ${!isMenuOpen ||
+            className={`${style.mainMenu} ${
+              !isMenuOpen ||
               (size.width > 768
                 ? style["mainMenuClose"]
                 : style["mainMenuOpen"])
-              }`}
+            }`}
           >
             {(isMenuOpen || size.width > 768) &&
               navbarList.map((item: any) => (
@@ -89,34 +86,29 @@ const Header = () => {
         </nav>
       </div>
 
-
       <div className={style.headerRight}>
         {size.width > 768 ? (
           <DiscordButton />
         ) : (
           <button onClick={switchMenu} className={style.hamburger}>
             <div
-              className={`${genericHamburgerLine} ${isMenuOpen
-                  ? style['part1']
-                  : style['part2']
-                }`}/>
-            
+              className={`${genericHamburgerLine} ${
+                isMenuOpen ? style["part1"] : style["part2"]
+              }`}
+            />
+
             <div
-              className={`${genericHamburgerLine} ${isMenuOpen ? style['part3'] : style['secondLine']
-                }`}
+              className={`${genericHamburgerLine} ${
+                isMenuOpen ? style["part3"] : style["secondLine"]
+              }`}
             />
             <div
-              className={`${genericHamburgerLine} ${isMenuOpen
-                  ? style['part5']
-                  : style['part6']
-                }`}
+              className={`${genericHamburgerLine} ${
+                isMenuOpen ? style["part5"] : style["part6"]
+              }`}
             />
           </button>
-
         )}
-
-
-
       </div>
     </div>
   );

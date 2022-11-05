@@ -16,6 +16,7 @@ module.exports = {
         "primary-blue-300": "#0E1B31",
         "primary-blue-200": "#132340",
         "primary-blue-100": "#293B56",
+        "primary-gray-400": "#656464",
       },
       keyframes: {
         wiggle: {
