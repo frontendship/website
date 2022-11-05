@@ -32,3 +32,6 @@ export const BriefSection = dynamic(
   () => import("./BriefSection/BriefSection")
 );
 export const Event = dynamic(() => import("./Event/Event"));
+export const ContributorsSection = dynamic(
+  () => import("./ContributorsSection/ContributorsSection")
+);

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header, Event, BriefSection, GitHubSection } from "components";
+import { Header, Event, BriefSection, GitHubSection, ContributorsSection } from "components";
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Event />
+      <ContributorsSection />
       <BriefSection />
       <GitHubSection />
     </>
