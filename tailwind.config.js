@@ -18,6 +18,13 @@ module.exports = {
         "primary-blue-100": "#293B56",
         "primary-gray-400": "#656464",
       },
+      keyframes: {
+        wiggle: {
+          '0%': { left:'-400px' },
+          '100%': { left:'0px' },
+        }
+      },
+     
     },
   },
   plugins: [],

@@ -4,7 +4,7 @@ import { Header, Event, BriefSection, GitHubSection } from "components";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <link rel="shortcut icon" href="icon.png" />
         <title> Frontendship</title>
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <Event />
       <BriefSection />
       <GitHubSection />
-    </div>
+    </>
   );
 };
 
