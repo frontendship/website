@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header, Event, BriefSection, GitHubSection } from "components";
+import { Header, Event, BriefSection, GitHubSection, Banner } from "components";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +10,7 @@ const Home: NextPage = () => {
         <title> Frontendship</title>
       </Head>
       <Header />
+      <Banner />
       <Event />
       <BriefSection />
       <GitHubSection />
