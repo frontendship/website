@@ -1,0 +1,15 @@
+.container {
+  @apply items-center md:w-full bg-primary-blue-400 justify-center;
+}
+.innerContainer {
+  @apply w-full p-5 sm:p-10 md:h-full xl:h-full sm:h-screen lg:h-full;
+}
+.title {
+  @apply text-5xl text-white font-bold text-center m-6;
+}
+.subtitle {
+  @apply mx-auto w-[35%] text-xl mb-3 text-white text-center;
+}
+.contributors {
+  @apply grid grid-cols-4 gap-8;
+}
