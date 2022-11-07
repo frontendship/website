@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header, Event, BriefSection, GitHubSection, Banner } from "components";
+import { Header, Event, BriefSection, GitHubSection, ContributorsSection, Banner } from "components";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
       <Header />
       <Banner />
       <Event />
+      <ContributorsSection />
       <BriefSection />
       <GitHubSection />
     </>
