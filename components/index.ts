@@ -19,6 +19,7 @@ import dynamic from "next/dynamic";
 
 export const Header = dynamic(() => import("./Header/Header"));
 export const Title = dynamic(() => import("./Title/Title"));
+export const TitleSection = dynamic(() => import("./TitleSection/TitleSection"));
 export const Icon = dynamic(() => import("./Icon/Icon"));
 export const GitHubSection = dynamic(
   () => import("./GitHubSection/GitHubSection")
