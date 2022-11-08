@@ -7,14 +7,14 @@ type TitleSectionProps = {
   level?: HtmlHeadLevel;
   title: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
-  subtitleStyles?: StyleTypes;
-  titleStyles?: StyleTypes;
+  subtitleStyles?: string | StyleTypes;
+  titleStyles?: string | StyleTypes;
   className?: string;
 };
 
 type SubTitleProps = {
   text?: string | React.ReactNode;
-  styles?: StyleTypes;
+  styles?: string | StyleTypes;
 };
 const SubTitle = (props: SubTitleProps) => {
   if (typeof props.text == "string") {
