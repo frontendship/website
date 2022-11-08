@@ -4,26 +4,26 @@ Section component can be used to wrap content to apply padding and background co
 
 ## Props List
 
+_Type_ **Size**: `sm`, `md`, `lg` or `xl`
+| `sm` | `md` | `lg` | `xl` |
+| ---- | ---- | ---- | ---- |
+| 0.5rem | 1rem | 1.5rem | 2.5rem |
+
 | Name            | Type      | Optional |
 | --------------- | --------- | -------- |
-| className       | string    | ✔        |
-| p               | string    | ✔        |
-| px              | string    | ✔        |
-| py              | string    | ✔        |
-| pt              | string    | ✔        |
-| pb              | string    | ✔        |
-| pl              | string    | ✔        |
-| pr              | string    | ✔        |
-| backgroundColor | string    | ✔        |
+| className       | Size      | ✔        |
+| p               | Size      | ✔        |
+| px              | Size      | ✔        |
+| py              | Size      | ✔        |
+| pt              | Size      | ✔        |
+| pb              | Size      | ✔        |
+| pl              | Size      | ✔        |
+| pr              | Size      | ✔        |
+| backgroundColor | Size      | ✔        |
 | children        | ReactNode | ✖        |
 
 ## Usage
 
 ```tsx
-<Section px="0.5rem" py="1rem" backgroundColor="red">
+<Section px="sm" py="lg" backgroundColor="bg-red-600">
 ```
-
-- For paddings you need to specify the unit. (i.e. `rem`, `em` or `px`)
-- `backgroundColor` can take anything that is valid for css. (i.e. `red`, `#000`, `rgb(0, 0, 0)`)
-- `pb` and `pt` will override `py`
-- `pl` and `pr` will override `px`
