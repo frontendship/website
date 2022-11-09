@@ -5,7 +5,7 @@ import { StyleTypes } from "types/style.types";
 
 export type TitleProps = {
   level?: HtmlHeadLevel;
-  styles?: StyleTypes;
+  styles?: StyleTypes | string;
   children: React.ReactNode;
 };
 
