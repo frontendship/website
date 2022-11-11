@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Footer from '../components/Footer/Footer';
 import {
   Header,
   Event,
@@ -8,6 +7,7 @@ import {
   GitHubSection,
   ContributorsSection,
   Banner,
+  Footer,
 } from 'components';
 
 const Home: NextPage = () => {
@@ -23,6 +23,7 @@ const Home: NextPage = () => {
       <ContributorsSection />
       <BriefSection />
       <GitHubSection />
+      <Footer />
     </>
   );
 };
