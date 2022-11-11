@@ -16,13 +16,6 @@ module.exports = {
         'primary-blue-300': '#0E1B31',
         'primary-blue-200': '#132340',
         'primary-blue-100': '#293B56',
-        primaryBrand: '#187AEB',
-        secondaryBrand: '#0CBACC',
-        'primary-blue-400': '#050B1E',
-        'primary-blue-300': '#0E1B31',
-        'primary-blue-200': '#132340',
-        'primary-blue-100': '#293B56',
-        'primary-gray-400': '#656464',
       },
       keyframes: {
         wiggle: {
