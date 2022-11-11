@@ -1,19 +1,29 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Footer from "../components/Footer/Footer";
-import GitHubSection from "../components/GitHubSection/GitHubSection";
-import Header from "../components/Header/Header";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Footer from '../components/Footer/Footer';
+import {
+  Header,
+  Event,
+  BriefSection,
+  GitHubSection,
+  ContributorsSection,
+  Banner,
+} from 'components';
+
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <link rel="shortcut icon" href="icon.png" />
         <title> Frontendship</title>
       </Head>
       <Header />
+      <Banner />
+      <Event />
+      <ContributorsSection />
+      <BriefSection />
       <GitHubSection />
-      <Footer/>
-    </div>
+    </>
   );
 };
 

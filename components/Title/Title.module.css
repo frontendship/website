@@ -1,3 +1,23 @@
-.title {
-  @apply; /* TODO <-- add default title styles here */
+.title-h1 {
+  @apply text-3xl font-bold mb-3 text-primary-blue-400 text-center md:text-5xl;
+}
+
+.title-h2 {
+  @apply text-3xl font-bold mb-3 text-primary-blue-400 text-center md:text-5xl;
+}
+
+.title-h3 {
+  @apply text-4xl;
+}
+
+.title-h4 {
+  @apply text-3xl;
+}
+
+.title-h5 {
+  @apply text-2xl;
+}
+
+.title-h6 {
+  @apply text-xl font-semibold text-primary-blue-400 leading-none mb-[8px];
 }

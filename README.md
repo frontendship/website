@@ -68,7 +68,7 @@ git merge upstream/<BRANCH_NAME>
 ### Example
 
 ```bash
-git remote add upstream https://github.com/fshipcommunity/website
+git remote add upstream https://github.com/frontendship/website
 git fetch upstream
 git checkout development
 git merge upstream/development
@@ -77,7 +77,7 @@ git merge upstream/development
 ## Usage/Examples
 
 ```javascript
-import Header from "../components/Header";
+import Header from "components/Header";
 
 function App() {
   console.log("Hello world");

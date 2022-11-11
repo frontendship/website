@@ -1,0 +1,47 @@
+.container {
+  @apply bg-primary-blue-400   xl:h-[660px] h-[550px] md:h-[560px] justify-center items-center p-5 flex flex-col sm:flex-row sm:gap-6 sm:p-10;
+}
+
+.bannerLeft {
+  @apply text-white;
+}
+
+.title {
+  @apply sm:text-[56px] text-5xl leading-none xl:w-2/4 font-bold md:w-5/6;
+}
+
+.description {
+  @apply opacity-50 pt-4 pb-6 xl:w-2/3 md:w-5/6;
+}
+
+.buttonContainer {
+  @apply flex gap-4;
+}
+
+.buttonFill {
+  @apply sm:h-14 h-12  flex-1 sm:flex-none sm:w-36 bg-white text-xl font-medium text-black rounded-[8px];
+}
+
+.buttonBorder {
+  @apply sm:h-14 h-12 flex-1 sm:flex-none sm:w-36 text-xl font-medium border rounded-[8px];
+}
+
+.bannerRight {
+  @apply gap-4 pt-6 flex sm:items-center;
+}
+
+.videoContainer {
+  @apply relative flex;
+}
+
+.playButton {
+  @apply h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-[1.2] transition-all hover:-rotate-12 drop-shadow-lg;
+}
+
+.image {
+  @apply rounded-xl;
+}
+
+.imageCol {
+  @apply flex gap-4 sm:flex-col;
+}
