@@ -17,29 +17,32 @@
 
 import dynamic from "next/dynamic";
 
-export const Header = dynamic(() => import("./Header/Header"));
-export const Title = dynamic(() => import("./Title/Title"));
+export const Main = dynamic(() => import("./layout/Main"));
+export const Header = dynamic(() => import("./layout/Header/Header"));
+export const Title = dynamic(() => import("./base/Title/Title"));
 export const TitleSection = dynamic(
-  () => import("./TitleSection/TitleSection")
+  () => import("./layout/Section/SectionContext/TitleSection")
 );
-export const Icon = dynamic(() => import("./Icon/Icon"));
+export const Icon = dynamic(() => import("./base/Icon/Icon"));
 export const GitHubSection = dynamic(
-  () => import("./GitHubSection/GitHubSection")
+  () => import("./sections/GitHub/GitHubSection")
 );
 export const GitHubSectionCard = dynamic(
-  () => import("./GitHubSectionCard/GitHubSectionCard")
+  () => import("./sections/GitHub/GitHubSectionCard/GitHubSectionCard")
 );
-export const BlogCard = dynamic(() => import("./BlogCard/BlogCard"));
+export const BlogCard = dynamic(
+  () => import("./sections/Blog/BlogCard/BlogCard")
+);
 
 export const BriefSection = dynamic(
-  () => import("./BriefSection/BriefSection")
+  () => import("./sections/Brief/BriefSection")
 );
-export const Event = dynamic(() => import("./Event/Event"));
+export const Event = dynamic(() => import("./sections/Blog/Event"));
 export const ContributorsSection = dynamic(
-  () => import("./ContributorsSection/ContributorsSection")
+  () => import("./sections/Contributors/ContributorsSection")
 );
 export const CommunityModerators = dynamic(
-  () => import("./CommunityModerators/CommunityModerators")
+  () => import("./sections/CommunityModerators/CommunityModerators")
 );
-export const Banner = dynamic(() => import("./Banner/Banner"));
-export const Footer = dynamic(() => import("./Footer/Footer"));
+export const Banner = dynamic(() => import("./sections/Banner/Banner"));
+export const Footer = dynamic(() => import("./layout/Footer/Footer"));

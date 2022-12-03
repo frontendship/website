@@ -1,3 +1,8 @@
+- Component namingler düzelecek
+- Section component'ı diğer componentlarda kullanılacak
+- Title componentı için bir standart belirlenecek (font-size, font-weight, color)
+- Base componentlar belirlenip reuse edilecek (button gibi
+
 Figma: https://www.figma.com/file/LCgTUgVNpKKMQQ3xlAca4p/frontendship?node-id=0%3A1
 
 ## Getting Started
@@ -39,6 +44,7 @@ Start the development server
 ## How to open a pull request
 
 Make sure your fork repository is synced with remote (upstream, original) repository to avoid conflicts. You can either [check here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) or simply use terminal codes below.
+
 ### Syncing a fork branch
 
 First add upstream with:

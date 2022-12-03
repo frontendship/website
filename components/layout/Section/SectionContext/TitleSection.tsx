@@ -41,10 +41,7 @@ const TitleSection = (props: TitleSectionProps) => {
         {props.title}
       </Title>
       {props.subtitle && (
-        <SubTitle
-          text={props.subtitle}
-          styles={props.subtitleStyles}
-        ></SubTitle>
+        <SubTitle text={props.subtitle} styles={props.subtitleStyles} />
       )}
     </div>
   );
