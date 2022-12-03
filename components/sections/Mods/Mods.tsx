@@ -1,14 +1,14 @@
 import React from 'react'
-import styles from './ContributorsSection.module.css'
+import styles from './Mods.module.css'
 import Card from './Card/Card'
 import mods from './sample.json' assert { type: 'json' }
-import { TitleSection } from 'components'
+import { SectionContext } from 'components'
 
-const ContributorsSection = () => {
+const Contributors = () => {
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
-        <TitleSection
+        <SectionContext
           subtitle="Frontendship’in herkes için daha verimli ve eğlenceli bir topluluk olması için katkı sağlayan üyelerimiz."
           title="Topluluk Moderatörleri"
           titleStyles={styles.title}
@@ -29,4 +29,4 @@ const ContributorsSection = () => {
   )
 }
 
-export default ContributorsSection
+export default Contributors

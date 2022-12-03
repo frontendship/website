@@ -2,11 +2,11 @@ import type { NextPage } from 'next'
 
 import {
   Event,
-  BriefSection,
-  GitHubSection,
-  ContributorsSection,
+  Brief,
+  GitHub,
+  Contributors,
   Banner,
-  CommunityModerators,
+  Mods,
   Main,
 } from 'components'
 
@@ -16,10 +16,10 @@ const Home: NextPage = () => {
       <Main>
         <Banner />
         <Event />
-        <ContributorsSection />
-        <BriefSection />
-        <GitHubSection />
-        <CommunityModerators />
+        <Contributors />
+        <Brief />
+        <GitHub />
+        <Mods />
       </Main>
     </>
   )

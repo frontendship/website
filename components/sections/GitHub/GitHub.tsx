@@ -1,12 +1,13 @@
 import React from 'react'
-import { GitHubSectionCard, Icon } from 'components'
-import styles from './GitHubSection.module.css'
+import { Icon } from 'components'
+import styles from './GitHub.module.css'
+import Card from './Card/Card'
 
-const GithubSection = () => {
+const GitHub = () => {
   return (
     <div className={styles.container}>
       <div className={styles.cardContainer}>
-        <GitHubSectionCard />
+        <Card />
       </div>
       <div className={styles.descContainer}>
         <h1 className={styles.title}>Frontendship’e dair her şey bir arada!</h1>
@@ -26,4 +27,4 @@ const GithubSection = () => {
   )
 }
 
-export default GithubSection
+export default GitHub

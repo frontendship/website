@@ -1,5 +1,6 @@
 import React from 'react'
-import { Title, BlogCard } from 'components'
+import { Title } from 'components'
+import Card from './Card/Card'
 
 const Blog = () => {
   return (
@@ -8,7 +9,7 @@ const Blog = () => {
         <Title level={2}> Latest Blog Posts </Title>
       </div>
       {/*title-end*/}
-      <BlogCard />
+      <Card />
       <div className="">
         <div></div>
         {/*main-banner-end*/}

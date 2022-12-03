@@ -17,24 +17,24 @@
 
 import dynamic from 'next/dynamic'
 
+// Base
+export const Title = dynamic(() => import('./base/Title/Title'))
+export const Icon = dynamic(() => import('./base/Icon/Icon'))
+
+// Layout
 export const Main = dynamic(() => import('./layout/Main'))
 export const Header = dynamic(() => import('./layout/Header/Header'))
-export const Title = dynamic(() => import('./base/Title/Title'))
-export const TitleSection = dynamic(
+export const Footer = dynamic(() => import('./layout/Footer/Footer'))
+export const SectionContext = dynamic(
   () => import('./layout/Section/SectionContext/TitleSection'),
 )
-export const Icon = dynamic(() => import('./base/Icon/Icon'))
-export const GitHubSection = dynamic(() => import('./sections/GitHub/GitHub'))
-export const GitHubSectionCard = dynamic(
-  () => import('./sections/GitHub/Card/Card'),
-)
-export const BlogCard = dynamic(() => import('./sections/Blog/Card/Card'))
 
-export const BriefSection = dynamic(() => import('./sections/Brief/Brief'))
+// Sections
+export const Banner = dynamic(() => import('./sections/Banner/Banner'))
+export const GitHub = dynamic(() => import('./sections/GitHub/GitHub'))
+export const Brief = dynamic(() => import('./sections/Brief/Brief'))
 export const Event = dynamic(() => import('./sections/Blog/Blog'))
-export const ContributorsSection = dynamic(() => import('./sections/Mods/Mods'))
-export const CommunityModerators = dynamic(
+export const Contributors = dynamic(() => import('./sections/Mods/Mods'))
+export const Mods = dynamic(
   () => import('./sections/Contributors/Contributors'),
 )
-export const Banner = dynamic(() => import('./sections/Banner/Banner'))
-export const Footer = dynamic(() => import('./layout/Footer/Footer'))

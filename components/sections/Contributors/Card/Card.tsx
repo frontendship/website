@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ModeratorCard.module.css'
+import styles from './Card.module.css'
 
 interface CardProps {
   profileImage: String
@@ -7,7 +7,7 @@ interface CardProps {
   title: String
 }
 
-const ModeratorsCard = ({ profileImage, name, title }: CardProps) => {
+const Card = ({ profileImage, name, title }: CardProps) => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageWrapper}>
@@ -21,4 +21,4 @@ const ModeratorsCard = ({ profileImage, name, title }: CardProps) => {
   )
 }
 
-export default ModeratorsCard
+export default Card

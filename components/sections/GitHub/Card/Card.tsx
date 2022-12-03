@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import { Icon } from 'components'
-import styles from './GitHubSectionCard.module.css'
+import styles from './Card.module.css'
 
-const GitHubSectionCard = () => {
+const GitHub = () => {
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
@@ -63,4 +63,4 @@ const GitHubSectionCard = () => {
   )
 }
 
-export default GitHubSectionCard
+export default GitHub

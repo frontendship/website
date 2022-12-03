@@ -1,18 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Icon } from 'components'
-import { IBlogCard } from 'types/index.types'
-import styles from './BlogCard.module.scss'
+import styles from './Card.module.scss'
 import sampleData from './sample.json'
 
-type Props = {
-  blog: IBlogCard
-}
-
-const BlogCard = () => {
+const Card = () => {
   return (
     <div className={styles.blogContainer}>
-      {sampleData.map((blog: any, index: number) => (
+      {sampleData.map((blog: any) => (
         <div className={styles.card} key={blog.id}>
           <div className={styles.imgContainer}>
             <Image
@@ -43,4 +38,4 @@ const BlogCard = () => {
   )
 }
 
-export default BlogCard
+export default Card

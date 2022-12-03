@@ -1,14 +1,14 @@
-import { Icon, Title, TitleSection } from 'components'
-import style from './BriefSection.module.css'
+import { Icon, Title, SectionContext } from 'components'
+import style from './Brief.module.css'
 import sampleData from './sample.json'
 
-const BriefSection = () => {
+const Brief = () => {
   return (
     <div className="flex flex-col justify-center items-center py-12">
-      <TitleSection
+      <SectionContext
         subtitle="Frontend alanında sıfırdan ileri seviyelere kadar sektöre katkı sağlayacak içerikler üretmek ve topluluğa destek sağlamak istiyoruz."
         title="Frontendship'e neden katılmalıyım?"
-      ></TitleSection>
+      />
       <div className="flex max-w-7xl">
         <div className={style.card}>
           {sampleData?.map((card: any, index: number) => (
@@ -29,4 +29,4 @@ const BriefSection = () => {
     </div>
   )
 }
-export default BriefSection
+export default Brief
