@@ -65,7 +65,7 @@ const Header = () => {
     <div className={style.header}>
       <div className={style.headerLeft}>
         <div className={style.logo}>
-          <Image alt="logo" src={logo} />
+          <Image alt="logo" src={logo} width={180} height={36} />
         </div>
         <nav className={style.navbar}>
           <ul

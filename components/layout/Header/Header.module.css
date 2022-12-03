@@ -12,7 +12,7 @@ bg-primary-blue-400;
   @apply flex justify-center;
 }
 .logo {
-  @apply flex items-center min-w-[200px] px-6 ml-[-18px];
+  @apply flex items-center px-6 ml-[-18px];
 }
 .navbar {
   @apply flex flex-col md:flex-row px-4;

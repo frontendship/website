@@ -15,6 +15,8 @@ const Card = ({ profileImage, name, title }: CardProps) => {
         <Image
           className={styles.image}
           src={`${profileImage}`}
+          width={140}
+          height={140}
           alt="moderator"
         />
       </div>

@@ -17,16 +17,22 @@ const GitHub = () => {
             <Image
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image1"
+              height={32}
+              width={32}
               className={styles.image}
             />
             <Image
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image2"
+              height={32}
+              width={32}
               className={styles.image}
             />
             <Image
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image3"
+              height={32}
+              width={32}
               className={styles.image}
             />
           </div>
