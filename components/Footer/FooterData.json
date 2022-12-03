@@ -1,0 +1,59 @@
+[
+  {
+    "id": 0,
+    "header": "Anasayfa",
+    "content": [
+      {
+        "title": "Neden Frontendship?",
+        "href": "/"
+      },
+      {
+        "title": "Katkı Sağla",
+        "href": "/"
+      },
+      {
+        "title": "Yaklaşan Etkinlikler",
+        "href": "/"
+      },
+      {
+        "title": "Ekibimiz",
+        "href": "/"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "header": "Kaynaklar",
+    "content": [
+      {
+        "title": "Makale",
+        "href": "/"
+      },
+      {
+        "title": "Roadmap",
+        "href": "/"
+      },
+      {
+        "title": "Video",
+        "href": "/"
+      },
+      {
+        "title": "Topluluk",
+        "href": "/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "header": "Topluluk",
+    "content": [
+      { "title": "Github", "href": "https://github.com/frontendship" },
+      { "title": "Discord", "href": "https://discord.com/invite/frontendship" },
+      {
+        "title": "Youtube",
+        "href": "https://www.youtube.com/channel/UCxQg0FsLbVywst5lh73FMOg"
+      },
+      { "title": "İletişim", "href": "https://twitter.com/frontendship" }
+    ]
+  }
+]

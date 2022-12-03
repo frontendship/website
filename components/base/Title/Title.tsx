@@ -7,7 +7,6 @@ export type TitleProps = {
   level?: HtmlHeadLevel;
   styles?: StyleTypes | string;
   children: React.ReactNode;
-  className?: string;
 };
 
 const Title = (props: TitleProps) => {
@@ -16,7 +15,7 @@ const Title = (props: TitleProps) => {
   return React.createElement(
     `h${level}`,
     {
-      className: `${propsStyles} ${props.className && props.className}`,
+      className: propsStyles,
     },
     props.children
   );

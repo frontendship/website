@@ -7,7 +7,7 @@
 .title {
   @apply text-5xl text-white font-bold text-center m-6;
 }
-.subtitle {
+.subTitle {
   @apply mx-auto w-[35%] text-xl mb-3 text-white text-center;
 }
 .contributors {

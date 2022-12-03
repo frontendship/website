@@ -1,0 +1,95 @@
+.header {
+  @apply flex
+  justify-between
+  items-center 
+  min-h-[5.625rem]
+  max-[640px]:p-6 sm:p-4 md:p-10
+text-primary-blue-300
+bg-primary-blue-400
+
+}
+
+.headerLeft {
+  @apply flex justify-center;
+}
+.logo {
+  @apply flex items-center min-w-[200px] px-6 ml-[-18px];
+}
+.navbar {
+  @apply flex flex-col md:flex-row px-4;
+}
+.mainMenu {
+  @apply flex
+  md:items-center
+  flex-col md:flex-row 
+  fixed md:relative
+  h-full
+  left-0 
+  mt-14 md:mt-0 
+  bg-primary-blue-400
+  animate-[wiggle_1s_ease-in-out_1];
+}
+
+.mainMenu li {
+  @apply md:border-primary-blue-400 border-b  border-b-white md:mx-0 mx-12 ;
+}
+
+.mainMenuOpen {
+  @apply w-full;
+}
+.mainMenuClose {
+  @apply hidden w-0;
+}
+
+.link {
+  @apply flex
+  text-lg md:text-base
+  text-white
+  py-6 px-16 md:py-4 md:px-4 
+  opacity-70 hover:opacity-100 
+  duration-500;
+}
+
+.linkActive {
+  @apply text-white;
+}
+
+.headerRight {
+  @apply bg-primary-blue-400;
+}
+.discordButton {
+  @apply py-[15px] w-56 mx-auto mt-12 md:mt-1 sm:w-52
+  md:w-44
+   px-[10px] lg:px-[23px]
+   rounded-[8px] 
+   text-primary-blue-400
+   bg-white;
+}
+
+.toggle {
+  @apply w-6 text-gray-200;
+}
+
+.genericHamburgerLine {
+  @apply h-1 w-6 my-1 rounded-full   bg-white transition transform duration-300;
+}
+
+.part1 {
+  @apply rotate-45 translate-y-1  opacity-80 group-hover:opacity-100;
+}
+
+.part2 {
+  @apply opacity-100 group-hover:opacity-100;
+}
+.part3 {
+  @apply opacity-0;
+}
+.secondLine {
+  @apply opacity-100 group-hover:opacity-100;
+}
+.part5 {
+  @apply -rotate-45 -translate-y-3 opacity-80 group-hover:opacity-100;
+}
+.part6 {
+  @apply opacity-100 group-hover:opacity-100;
+}

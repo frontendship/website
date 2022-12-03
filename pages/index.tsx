@@ -7,6 +7,7 @@ import {
   GitHubSection,
   ContributorsSection,
   Banner,
+  Footer,
   CommunityModerators,
 } from "components";
 
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <BriefSection />
       <GitHubSection />
       <CommunityModerators />
+      <Footer />
     </>
   );
 };
