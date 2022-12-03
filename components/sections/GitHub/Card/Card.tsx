@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import { Icon } from "components";
-import styles from "./GitHubSectionCard.module.css";
+import Link from 'next/link'
+import React from 'react'
+import { Icon } from 'components'
+import styles from './GitHubSectionCard.module.css'
 
 const GitHubSectionCard = () => {
   return (
@@ -60,7 +60,7 @@ const GitHubSectionCard = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GitHubSectionCard;
+export default GitHubSectionCard

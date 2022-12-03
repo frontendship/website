@@ -1,6 +1,6 @@
-import React from "react";
-import { Header, Footer } from "../index";
-import Head from "next/head";
+import React from 'react'
+import { Header, Footer } from '../index'
+import Head from 'next/head'
 
 function Main({ children }: { children: React.ReactNode }) {
   return (
@@ -13,7 +13,7 @@ function Main({ children }: { children: React.ReactNode }) {
       {children}
       <Footer />
     </>
-  );
+  )
 }
 
-export default Main;
+export default Main

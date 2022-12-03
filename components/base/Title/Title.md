@@ -10,22 +10,22 @@ The Title component is used to display a title in the page.
 
 ##  Props
 
-| Name | Type | Default | Description |
-| ---- | ---- | ------- | ----------- |
-| level | HtmlHeadLevel | 1 | The title level. |
-| styles | string | default title styles in `Title.module.css` | The title styles. |
-| children | ReactNode |  | The title text. |
+| Name     | Type          | Default                                    | Description       |
+| -------- | ------------- | ------------------------------------------ | ----------------- |
+| level    | HtmlHeadLevel | 1                                          | The title level.  |
+| styles   | string        | default title styles in `Title.module.css` | The title styles. |
+| children | ReactNode     |                                            | The title text.   |
 
 ## HtmlHeadLevel
 
 | Name | Value |
 | ---- | ----- |
-| h1 | 1 |
-| h2 | 2 |
-| h3 | 3 |
-| h4 | 4 |
-| h5 | 5 |
-| h6 | 6 |
+| h1   | 1     |
+| h2   | 2     |
+| h3   | 3     |
+| h4   | 4     |
+| h5   | 5     |
+| h6   | 6     |
 
 ##  Examples
 
@@ -41,5 +41,7 @@ The Title component is used to display a title in the page.
 with custom style:
 
 ```tsx
-<Title level={h2} styles={styles.title}>My Title</Title>
+<Title level={h2} styles={styles.title}>
+  My Title
+</Title>
 ```

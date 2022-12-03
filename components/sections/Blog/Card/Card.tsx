@@ -1,19 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Icon } from "components";
-import { IBlogCard } from "types/index.types";
-import styles from "./BlogCard.module.scss";
-import contentData from "./contentData.json";
+import Image from 'next/image'
+import Link from 'next/link'
+import { Icon } from 'components'
+import { IBlogCard } from 'types/index.types'
+import styles from './BlogCard.module.scss'
+import sampleData from './sample.json'
 
 type Props = {
-  blog: IBlogCard;
-};
+  blog: IBlogCard
+}
 
 const BlogCard = () => {
-  const cardArray: any = contentData;
   return (
     <div className={styles.blogContainer}>
-      {cardArray.map((blog: any, index: number) => (
+      {sampleData.map((blog: any, index: number) => (
         <div className={styles.card} key={blog.id}>
           <div className={styles.imgContainer}>
             <Image
@@ -32,7 +31,7 @@ const BlogCard = () => {
               <div className={styles.readMore}>
                 <Link href={blog.path}>
                   <span className="flex items-center gap-2">
-                    Read More <Icon icon="arrow-right" size={10} />{" "}
+                    Read More <Icon icon="arrow-right" size={10} />{' '}
                   </span>
                 </Link>
               </div>
@@ -41,7 +40,7 @@ const BlogCard = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default BlogCard;
+export default BlogCard

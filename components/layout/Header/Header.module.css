@@ -5,8 +5,7 @@
   min-h-[5.625rem]
   max-[640px]:p-6 sm:p-4 md:p-10
 text-primary-blue-300
-bg-primary-blue-400
-
+bg-primary-blue-400;
 }
 
 .headerLeft {
@@ -31,7 +30,7 @@ bg-primary-blue-400
 }
 
 .mainMenu li {
-  @apply md:border-primary-blue-400 border-b  border-b-white md:mx-0 mx-12 ;
+  @apply md:border-primary-blue-400 border-b  border-b-white md:mx-0 mx-12;
 }
 
 .mainMenuOpen {

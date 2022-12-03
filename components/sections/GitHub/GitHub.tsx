@@ -1,6 +1,6 @@
-import React from "react";
-import { GitHubSectionCard, Icon } from "components";
-import styles from "./GitHubSection.module.css";
+import React from 'react'
+import { GitHubSectionCard, Icon } from 'components'
+import styles from './GitHubSection.module.css'
 
 const GithubSection = () => {
   return (
@@ -23,7 +23,7 @@ const GithubSection = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GithubSection;
+export default GithubSection

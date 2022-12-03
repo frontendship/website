@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next'
 
 import {
   Event,
@@ -8,7 +8,7 @@ import {
   Banner,
   CommunityModerators,
   Main,
-} from "components";
+} from 'components'
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <CommunityModerators />
       </Main>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

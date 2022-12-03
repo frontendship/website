@@ -1,24 +1,24 @@
-import style from "./Header.module.css";
-import logo from "./logo.png";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import style from './Header.module.css'
+import logo from './logo.png'
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 const navbarList = [
-  { name: "Anasayfa", link: "/", isActive: true },
-  { name: "Discord", link: "/discord" },
-  { name: "Blog", link: "/blog" },
-  { name: "Etkinlikler", link: "events" },
-];
+  { name: 'Anasayfa', link: '/', isActive: true },
+  { name: 'Discord', link: '/discord' },
+  { name: 'Blog', link: '/blog' },
+  { name: 'Etkinlikler', link: 'events' },
+]
 
 const DiscordButton = () => (
-  <button className={style["discordButton"]}>Discorda Katıl</button>
-);
+  <button className={style['discordButton']}>Discorda Katıl</button>
+)
 
 type NavbarItemProps = {
-  name: string;
-  isActive?: boolean;
-  link: string;
-};
+  name: string
+  isActive?: boolean
+  link: string
+}
 const NavbarItem = ({ item }: { item: NavbarItemProps }) => {
   return (
     <li>
@@ -29,38 +29,38 @@ const NavbarItem = ({ item }: { item: NavbarItemProps }) => {
         {item.name}
       </a>
     </li>
-  );
-};
+  )
+}
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const genericHamburgerLine = style["genericHamburgerLine"];
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const genericHamburgerLine = style['genericHamburgerLine']
   const [size, setSize] = useState({
     width: 0,
     height: 0,
-  });
+  })
 
   useEffect(() => {
     const handleResize = () => {
       setSize({
         width: window.innerWidth,
         height: window.innerHeight,
-      });
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
+      })
+    }
+    window.addEventListener('resize', handleResize)
+    handleResize()
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     if (size.width > 768 && isMenuOpen) {
-      setIsMenuOpen(false);
+      setIsMenuOpen(false)
     }
-  }, [size.width, isMenuOpen]);
+  }, [size.width, isMenuOpen])
 
   const switchMenu = () => {
-    setIsMenuOpen((p) => !p);
-  };
+    setIsMenuOpen((p) => !p)
+  }
   return (
     <div className={style.header}>
       <div className={style.headerLeft}>
@@ -72,8 +72,8 @@ const Header = () => {
             className={`${style.mainMenu} ${
               !isMenuOpen ||
               (size.width > 768
-                ? style["mainMenuClose"]
-                : style["mainMenuOpen"])
+                ? style['mainMenuClose']
+                : style['mainMenuOpen'])
             }`}
           >
             {(isMenuOpen || size.width > 768) &&
@@ -93,25 +93,25 @@ const Header = () => {
           <button onClick={switchMenu} className={style.hamburger}>
             <div
               className={`${genericHamburgerLine} ${
-                isMenuOpen ? style["part1"] : style["part2"]
+                isMenuOpen ? style['part1'] : style['part2']
               }`}
             />
 
             <div
               className={`${genericHamburgerLine} ${
-                isMenuOpen ? style["part3"] : style["secondLine"]
+                isMenuOpen ? style['part3'] : style['secondLine']
               }`}
             />
             <div
               className={`${genericHamburgerLine} ${
-                isMenuOpen ? style["part5"] : style["part6"]
+                isMenuOpen ? style['part5'] : style['part6']
               }`}
             />
           </button>
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

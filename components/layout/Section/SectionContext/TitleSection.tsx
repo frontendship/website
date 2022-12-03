@@ -1,23 +1,23 @@
-import { Title } from "components";
-import { HtmlHeadLevel } from "types/html.types";
-import { StyleTypes } from "types/style.types";
-import TitleSectionStyle from "./TitleSection.module.css";
+import { Title } from 'components'
+import { HtmlHeadLevel } from 'types/html.types'
+import { StyleTypes } from 'types/style.types'
+import TitleSectionStyle from './TitleSection.module.css'
 
 type TitleSectionProps = {
-  level?: HtmlHeadLevel;
-  title: string | React.ReactNode;
-  subtitle?: string | React.ReactNode;
-  subtitleStyles?: string | StyleTypes;
-  titleStyles?: string | StyleTypes;
-  className?: string;
-};
+  level?: HtmlHeadLevel
+  title: string | React.ReactNode
+  subtitle?: string | React.ReactNode
+  subtitleStyles?: string | StyleTypes
+  titleStyles?: string | StyleTypes
+  className?: string
+}
 
 type SubTitleProps = {
-  text?: string | React.ReactNode;
-  styles?: string | StyleTypes;
-};
+  text?: string | React.ReactNode
+  styles?: string | StyleTypes
+}
 const SubTitle = (props: SubTitleProps) => {
-  if (typeof props.text == "string") {
+  if (typeof props.text == 'string') {
     return (
       <p
         className={`${TitleSectionStyle.subTitle} ${
@@ -26,10 +26,10 @@ const SubTitle = (props: SubTitleProps) => {
       >
         {props.text}
       </p>
-    );
+    )
   }
-  return <>{props.text}</>;
-};
+  return <>{props.text}</>
+}
 const TitleSection = (props: TitleSectionProps) => {
   return (
     <div
@@ -44,7 +44,7 @@ const TitleSection = (props: TitleSectionProps) => {
         <SubTitle text={props.subtitle} styles={props.subtitleStyles} />
       )}
     </div>
-  );
-};
+  )
+}
 
-export default TitleSection;
+export default TitleSection

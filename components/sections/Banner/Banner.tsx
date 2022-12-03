@@ -1,6 +1,6 @@
-import Image from "next/image";
-import PlayButton from "./PlayButton";
-import styles from "./Banner.module.css";
+import Image from 'next/image'
+import PlayButton from './PlayButton'
+import styles from './Banner.module.css'
 const Banner = () => {
   return (
     <div className={styles.container}>
@@ -53,7 +53,7 @@ const Banner = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner

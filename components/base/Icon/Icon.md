@@ -19,9 +19,8 @@ Icon component is the base component for SVG icon displays on pages and componen
 ## Usage
 
 ```tsx
-import Icon from "./Icon";
-
-<Icon icon="pencil" size={20} color="orange" />;
+import Icon from './Icon'
+;<Icon icon="pencil" size={20} color="orange" />
 ```
 
 Don't forget to update selection.json file along the way. You can use `https://svgps.app/` or `https://icomoon.io/app/#/select` for adding or removing icons.

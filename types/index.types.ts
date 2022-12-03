@@ -1,6 +1,6 @@
 export interface IBlogCard {
-    id: number
-    title: string
-    image: string
-    path: string
-  }
+  id: number
+  title: string
+  image: string
+  path: string
+}

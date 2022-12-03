@@ -83,11 +83,11 @@ git merge upstream/development
 ## Usage/Examples
 
 ```javascript
-import Header from "components/Header";
+import Header from 'components/Header'
 
 function App() {
-  console.log("Hello world");
-  return <Header />;
+  console.log('Hello world')
+  return <Header />
 }
 ```
 

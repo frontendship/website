@@ -1,8 +1,8 @@
-import React from "react";
-import logo from "../../base/Icon/FrontendshipLogo.png";
-import Image from "next/image";
-import styles from "./Footer.module.css";
-import FooterData from "./FooterData.json";
+import React from 'react'
+import logo from '../../base/Icon/FrontendshipLogo.png'
+import Image from 'next/image'
+import styles from './Footer.module.css'
+import FooterData from './FooterData.json'
 
 const Footer = () => {
   const data = FooterData.map((data) => (
@@ -20,11 +20,11 @@ const Footer = () => {
                 </span>
               </a>
             </li>
-          ))}{" "}
+          ))}{' '}
         </ul>
       </div>
     </div>
-  ));
+  ))
 
   return (
     <footer className={styles.container}>
@@ -39,7 +39,7 @@ const Footer = () => {
           <div className={styles.mailInputContainer}>
             <input
               placeholder="Email Address"
-              type={"email"}
+              type={'email'}
               className={styles.mailInput}
             />
             <button className={styles.mailInputButton}>Subscribe</button>
@@ -50,7 +50,7 @@ const Footer = () => {
         <Image src={logo} alt="logo" width="153px" height="40px" />
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -15,34 +15,26 @@
   ```
  */
 
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic'
 
-export const Main = dynamic(() => import("./layout/Main"));
-export const Header = dynamic(() => import("./layout/Header/Header"));
-export const Title = dynamic(() => import("./base/Title/Title"));
+export const Main = dynamic(() => import('./layout/Main'))
+export const Header = dynamic(() => import('./layout/Header/Header'))
+export const Title = dynamic(() => import('./base/Title/Title'))
 export const TitleSection = dynamic(
-  () => import("./layout/Section/SectionContext/TitleSection")
-);
-export const Icon = dynamic(() => import("./base/Icon/Icon"));
-export const GitHubSection = dynamic(
-  () => import("./sections/GitHub/GitHubSection")
-);
+  () => import('./layout/Section/SectionContext/TitleSection'),
+)
+export const Icon = dynamic(() => import('./base/Icon/Icon'))
+export const GitHubSection = dynamic(() => import('./sections/GitHub/GitHub'))
 export const GitHubSectionCard = dynamic(
-  () => import("./sections/GitHub/GitHubSectionCard/GitHubSectionCard")
-);
-export const BlogCard = dynamic(
-  () => import("./sections/Blog/BlogCard/BlogCard")
-);
+  () => import('./sections/GitHub/Card/Card'),
+)
+export const BlogCard = dynamic(() => import('./sections/Blog/Card/Card'))
 
-export const BriefSection = dynamic(
-  () => import("./sections/Brief/BriefSection")
-);
-export const Event = dynamic(() => import("./sections/Blog/Event"));
-export const ContributorsSection = dynamic(
-  () => import("./sections/Contributors/ContributorsSection")
-);
+export const BriefSection = dynamic(() => import('./sections/Brief/Brief'))
+export const Event = dynamic(() => import('./sections/Blog/Blog'))
+export const ContributorsSection = dynamic(() => import('./sections/Mods/Mods'))
 export const CommunityModerators = dynamic(
-  () => import("./sections/CommunityModerators/CommunityModerators")
-);
-export const Banner = dynamic(() => import("./sections/Banner/Banner"));
-export const Footer = dynamic(() => import("./layout/Footer/Footer"));
+  () => import('./sections/Contributors/Contributors'),
+)
+export const Banner = dynamic(() => import('./sections/Banner/Banner'))
+export const Footer = dynamic(() => import('./layout/Footer/Footer'))
