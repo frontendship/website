@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Icon } from 'components'
 import styles from './Card.module.css'
+import Image from 'next/image'
 
 const GitHub = () => {
   return (
@@ -13,17 +14,17 @@ const GitHub = () => {
         </div>
         <div className={styles.images}>
           <div className={styles.imageContainer}>
-            <img
+            <Image
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image1"
               className={styles.image}
             />
-            <img
+            <Image
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image2"
               className={styles.image}
             />
-            <img
+            <Image
               src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image3"
               className={styles.image}
@@ -42,8 +43,8 @@ const GitHub = () => {
           <p className={styles.desc}>
             Discord sunucusuna aşağıdaki linkten katılabilirsiniz. Topluluğun
             sosyal medya hesaplarını takip ederek bizimle iletişime geçebilir ve
-            günlük shiplerinizi alabilirsiniz. Frontendship'in bir parçası
-            olarak değer katmaya başlayabilirsin.
+            günlük shiplerinizi alabilirsiniz. Frontendshipin bir parçası olarak
+            değer katmaya başlayabilirsin.
           </p>
         </div>
         <div>
