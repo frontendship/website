@@ -1,23 +1,15 @@
-import React from 'react'
-import { Title } from 'components'
 import Card from './Card/Card'
+import { SectionContainer, SectionContext } from 'components'
 
 const Blog = () => {
   return (
-    <section className="w-full p-28 bg-red-400">
-      <div className="flex flex-col justify-center items-start">
-        <Title level={2}> Latest Blog Posts </Title>
-      </div>
-      {/*title-end*/}
+    <SectionContainer bgColor="bg-gray-200">
+      <SectionContext
+        subtitle="Latest Blog Posts"
+        title="You can see latest blog posts on this section"
+      />
       <Card />
-      <div className="">
-        <div></div>
-        {/*main-banner-end*/}
-        <div></div>
-        {/*main-banner-text-end*/}
-      </div>
-      {/*main-end*/}
-    </section>
+    </SectionContainer>
   )
 }
 

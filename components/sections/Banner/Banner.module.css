@@ -1,5 +1,5 @@
 .container {
-  @apply bg-primary-blue-400   xl:h-[660px] h-[550px] md:h-[560px] justify-center items-center p-5 flex flex-col sm:flex-row sm:gap-6 sm:p-10;
+  @apply bg-primary-blue-400 justify-center items-center flex flex-col sm:flex-row sm:gap-6;
 }
 
 .bannerLeft {

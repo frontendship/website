@@ -1,5 +1,5 @@
 .cardContainer {
-  @apply bg-white rounded-2xl pl-6 pr-6 pt-7 pb-7 xl:pt-7 xl:pr-12 xl:pl-12 xl:pb-7 flex flex-col justify-center items-center text-center;
+  @apply bg-gray-100 rounded-2xl pl-6 pr-6 pt-7 pb-7 xl:pt-7 xl:pr-12 xl:pl-12 xl:pb-7 flex flex-col justify-center items-center text-center;
 }
 
 .textWrapper {

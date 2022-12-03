@@ -1,14 +1,6 @@
 import type { NextPage } from 'next'
 
-import {
-  Event,
-  Brief,
-  GitHub,
-  Contributors,
-  Banner,
-  Mods,
-  Main,
-} from 'components'
+import { Event, Brief, GitHub, Banner, Contributors, Main } from 'components'
 
 const Home: NextPage = () => {
   return (
@@ -16,10 +8,9 @@ const Home: NextPage = () => {
       <Main>
         <Banner />
         <Event />
-        <Contributors />
         <Brief />
+        <Contributors />
         <GitHub />
-        <Mods />
       </Main>
     </>
   )

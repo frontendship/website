@@ -1,5 +1,3 @@
-- Component namingler düzelecek > +
-- Section component'ı diğer componentlarda kullanılacak
 - Title componentı için bir standart belirlenecek (font-size, font-weight, color)
 - Base componentlar belirlenip reuse edilecek (button gibi
 

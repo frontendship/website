@@ -25,6 +25,9 @@ export const Icon = dynamic(() => import('./base/Icon/Icon'))
 export const Main = dynamic(() => import('./layout/Main'))
 export const Header = dynamic(() => import('./layout/Header/Header'))
 export const Footer = dynamic(() => import('./layout/Footer/Footer'))
+export const SectionContainer = dynamic(
+  () => import('./layout/Section/Section'),
+)
 export const SectionContext = dynamic(
   () => import('./layout/Section/SectionContext/TitleSection'),
 )
@@ -34,7 +37,6 @@ export const Banner = dynamic(() => import('./sections/Banner/Banner'))
 export const GitHub = dynamic(() => import('./sections/GitHub/GitHub'))
 export const Brief = dynamic(() => import('./sections/Brief/Brief'))
 export const Event = dynamic(() => import('./sections/Blog/Blog'))
-export const Contributors = dynamic(() => import('./sections/Mods/Mods'))
-export const Mods = dynamic(
+export const Contributors = dynamic(
   () => import('./sections/Contributors/Contributors'),
 )

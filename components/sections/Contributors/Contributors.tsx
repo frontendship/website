@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './Contributors.module.css'
 import Card from './Card/Card'
 
+import { SectionContainer, SectionContext } from 'components'
+
 const Contributors = () => {
   const sampleData = [
     {
@@ -27,15 +29,12 @@ const Contributors = () => {
   ]
 
   return (
-    <div className={styles.container}>
-      <div className={styles.titleContainer}>
-        <p className={styles.shadowTitle}>Topluluk Moderatörleri</p>
-        <p className={styles.mainTitle}>Topluluk Moderatörleri</p>
-        <p className={styles.desc}>
-          Frontendship’in herkes için daha verimli ve eğlenceli bir topluluk
-          olması için katkı sağlayan üyelerimiz.
-        </p>
-      </div>
+    <SectionContainer bgColor="bg-gray-200">
+      <SectionContext
+        title="Our contributors"
+        subtitle="Frontendship’in herkes için daha verimli ve eğlenceli bir topluluk
+        olması için katkı sağlayan üyelerimiz."
+      />
       <div className={styles.cardContainer}>
         {sampleData?.map((card, index) => (
           <Card
@@ -46,7 +45,7 @@ const Contributors = () => {
           />
         ))}
       </div>
-    </div>
+    </SectionContainer>
   )
 }
 
